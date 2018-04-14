@@ -1,0 +1,7 @@
+<view>
+  <view style='padding-bottom:20px' wx:for="{{image}}" wx:key="key">
+    <view  data-index='{{index}}' style="width:100%;height:180px;overflow: hidden;">
+            <image src="{{item}}" id="{{index}}" bindload="imageLoad" style="height:{{imageHeight[index]}}px;width:{{imageWidth[index]}}px;margin-left:{{mariginLeft[index]}}px;;margin-top:{{mariginTop[index]}}px;" />
+    </view>
+  </view>
+</view>
